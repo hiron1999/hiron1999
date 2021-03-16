@@ -11,4 +11,4 @@
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: Android is the most bought mobile operating system in the world. In 2012, 70% of smartphone sales had Android operating systems.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hiron1999)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hiron1999&show_icons=true&theme=merko)
