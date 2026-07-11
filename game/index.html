@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Invaders - Hiron's Space Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="header">
+                <div class="stat">SCORE: <span id="score">0</span></div>
+                <div class="stat">HP: <div id="hp-bar"><div id="hp-fill"></div></div></div>
+            </div>
+            <div id="start-screen" class="screen active">
+                <h1>BUG INVADERS</h1>
+                <p>Eliminate NPE, OOM, 404, and DEADLOCK bugs to keep the system stable.</p>
+                <p style="font-size: 0.9rem; margin-top: -30px;">Use ARROWS or WASD to move. SPACE to shoot.</p>
+                <button id="start-btn">INITIALIZE SYSTEM</button>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h2>SYSTEM FAILURE</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">REBOOT SYSTEM</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

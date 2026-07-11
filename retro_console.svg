@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 440" width="100%" height="100%">
   <defs>
     <!-- Glowing Effect Filters -->
-    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="glow-magenta" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
     
-    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -27,13 +28,13 @@
 
     <!-- Scanline Pattern for CRT Screen -->
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="#000000" opacity="0.25"/>
+      <rect width="4" height="2" fill="#000000" opacity="0.3"/>
     </pattern>
 
     <!-- Screen Glass Glare -->
     <linearGradient id="glare" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
-      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.04" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10" />
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03" />
       <stop offset="35.1%" stop-color="#ffffff" stop-opacity="0" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
@@ -45,7 +46,6 @@
 
     <!-- Reusable Space Invader (Bug) Vector -->
     <g id="bug-invader">
-      <!-- 11x8 pixel-art space invader scaled -->
       <path d="M -11,-8 h 2 v 2 h -2 z M 9,-8 h 2 v 2 h -2 z M -7,-6 h 2 v 2 h -2 z M 5,-6 h 2 v 2 h -2 z M -7,-4 h 14 v 2 h -14 z M -11,-2 h 4 v 2 h -4 z M -3,-2 h 6 v 2 h -6 z M 7,-2 h 4 v 2 h -4 z M -15,0 h 30 v 2 h -30 z M -15,2 h 2 v 2 h -2 z M -11,2 h 22 v 2 h -22 z M 13,2 h 2 v 2 h -2 z M -15,4 h 2 v 2 h -2 z M 13,4 h 2 v 2 h -2 z M -7,4 h 2 v 2 h -2 z M 5,4 h 2 v 2 h -2 z" fill="currentColor"/>
     </g>
 
@@ -54,319 +54,58 @@
       <polygon points="0,-14 -12,8 12,8" fill="#00ffff" filter="url(#glow-cyan)" />
       <polygon points="-6,8 -10,12 -6,10" fill="#00ffff" />
       <polygon points="6,8 10,12 6,10" fill="#00ffff" />
-      <!-- Thruster Fire -->
-      <polygon points="-4,8 0,16 4,8" fill="#ff00ff" class="ship-fire" />
+      <!-- Thruster Fire (Animated via SMIL) -->
+      <polygon points="-3,8 0,15 3,8" fill="#ff00ff">
+        <animate attributeName="transform" type="scale" dur="0.1s" values="1,1; 1,1.5; 1,0.9" repeatCount="indefinite" />
+        <animate attributeName="fill" values="#ff00ff; #ff9900; #ff00ff" dur="0.1s" repeatCount="indefinite" />
+      </polygon>
     </g>
 
     <!-- Typing Animation Clip Paths (Phase 1) -->
     <clipPath id="clip-l1">
-      <rect x="160" y="90" width="0" height="20">
-        <animate attributeName="width" values="0;0;350;350;0" keyTimes="0;0.0208;0.0625;0.9583;1" dur="24s" repeatCount="indefinite" />
+      <rect x="160" y="85" width="0" height="20">
+        <animate attributeName="width" values="0;0;400;400;0" keyTimes="0;0.0208;0.0625;0.9583;1" dur="24s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="clip-l2">
-      <rect x="160" y="115" width="0" height="20">
-        <animate attributeName="width" values="0;0;350;350;0" keyTimes="0;0.0625;0.1042;0.9583;1" dur="24s" repeatCount="indefinite" />
+      <rect x="160" y="110" width="0" height="20">
+        <animate attributeName="width" values="0;0;400;400;0" keyTimes="0;0.0625;0.1042;0.9583;1" dur="24s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="clip-l3">
-      <rect x="160" y="140" width="0" height="20">
-        <animate attributeName="width" values="0;0;350;350;0" keyTimes="0;0.1042;0.1458;0.9583;1" dur="24s" repeatCount="indefinite" />
+      <rect x="160" y="135" width="0" height="20">
+        <animate attributeName="width" values="0;0;400;400;0" keyTimes="0;0.1042;0.1458;0.9583;1" dur="24s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="clip-l4">
-      <rect x="160" y="165" width="0" height="20">
-        <animate attributeName="width" values="0;0;350;350;0" keyTimes="0;0.1458;0.1875;0.9583;1" dur="24s" repeatCount="indefinite" />
+      <rect x="160" y="160" width="0" height="20">
+        <animate attributeName="width" values="0;0;400;400;0" keyTimes="0;0.1458;0.1875;0.9583;1" dur="24s" repeatCount="indefinite" />
       </rect>
     </clipPath>
     <clipPath id="clip-l5">
-      <rect x="160" y="190" width="0" height="20">
-        <animate attributeName="width" values="0;0;350;350;0" keyTimes="0;0.1875;0.2083;0.9583;1" dur="24s" repeatCount="indefinite" />
+      <rect x="160" y="185" width="0" height="20">
+        <animate attributeName="width" values="0;0;400;400;0" keyTimes="0;0.1875;0.2083;0.9583;1" dur="24s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
-  <style>
-    /* Global Styles */
-    .bg-metal { fill: qgradient(linear, x1 0, y1 0, x2 0, y2 1, stop 0 #2b273d, stop 1 #181524); }
-    .text-mono { font-family: "SF Mono", Monaco, Consolas, "Courier New", monospace; }
-    
-    /* Blinking LED */
-    .power-led { animation: led-blink 1s infinite alternate; }
-    @keyframes led-blink {
-      from { fill: #00ff66; filter: drop-shadow(0 0 1px #00ff66); }
-      to { fill: #008822; filter: none; }
-    }
-
-    /* Thruster Fire Animation */
-    .ship-fire {
-      transform-origin: center top;
-      animation: fire-glow 0.1s infinite alternate;
-    }
-    @keyframes fire-glow {
-      0% { transform: scaleY(0.8); fill: #ff00ff; }
-      100% { transform: scaleY(1.4); fill: #ffcc00; }
-    }
-
-    /* Phase transitions */
-    .stage-boot { animation: boot-anim 24s infinite step-end; }
-    .stage-game { animation: game-anim 24s infinite step-end; }
-    .stage-dash { animation: dash-anim 24s infinite step-end; }
-    .stage-glitch { animation: glitch-anim 24s infinite step-end; }
-
-    @keyframes boot-anim {
-      0%, 20.83% { opacity: 1; visibility: visible; }
-      20.84%, 100% { opacity: 0; visibility: hidden; }
-    }
-    @keyframes game-anim {
-      0%, 20.83% { opacity: 0; visibility: hidden; }
-      20.84%, 62.5% { opacity: 1; visibility: visible; }
-      62.51%, 100% { opacity: 0; visibility: hidden; }
-    }
-    @keyframes dash-anim {
-      0%, 62.5% { opacity: 0; visibility: hidden; }
-      62.51%, 95.83% { opacity: 1; visibility: visible; }
-      95.84%, 100% { opacity: 0; visibility: hidden; }
-    }
-    @keyframes glitch-anim {
-      0%, 95.83% { opacity: 0; visibility: hidden; }
-      95.84%, 99.9% { opacity: 1; visibility: visible; }
-      100% { opacity: 0; visibility: hidden; }
-    }
-
-    /* Typing Cursor Blinking */
-    .cursor-blink { animation: blink 0.4s infinite alternate; }
-    @keyframes blink {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    /* Terminal cursor timing groups */
-    .cur-g1 { animation: cg1 24s infinite step-end; }
-    .cur-g2 { animation: cg2 24s infinite step-end; }
-    .cur-g3 { animation: cg3 24s infinite step-end; }
-    .cur-g4 { animation: cg4 24s infinite step-end; }
-    .cur-g5 { animation: cg5 24s infinite step-end; }
-    
-    @keyframes cg1 { 0%, 2.08% { opacity:0; } 2.09%, 6.25% { opacity:1; } 6.26%, 100% { opacity:0; } }
-    @keyframes cg2 { 0%, 6.25% { opacity:0; } 6.26%, 10.42% { opacity:1; } 10.43%, 100% { opacity:0; } }
-    @keyframes cg3 { 0%, 10.42% { opacity:0; } 10.43%, 14.58% { opacity:1; } 14.59%, 100% { opacity:0; } }
-    @keyframes cg4 { 0%, 14.58% { opacity:0; } 14.59%, 18.75% { opacity:1; } 18.76%, 100% { opacity:0; } }
-    @keyframes cg5 { 0%, 18.75% { opacity:0; } 18.76%, 20.83% { opacity:1; } 20.84%, 100% { opacity:0; } }
-
-    /* Space Background Scroll */
-    .space-stars { animation: star-scroll 4s infinite linear; }
-    @keyframes star-scroll {
-      from { transform: translateY(0); }
-      to { transform: translateY(280px); }
-    }
-
-    /* Spaceship Game Movement */
-    .ship {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: ship-anim 24s infinite linear;
-    }
-    @keyframes ship-anim {
-      0%, 20.83% { transform: translate(400px, 300px); opacity: 0; }
-      20.84% { opacity: 1; transform: translate(400px, 300px); }
-      25.0%, 28.33% { transform: translate(250px, 300px); }
-      33.33%, 36.67% { transform: translate(520px, 300px); }
-      41.67%, 45.0% { transform: translate(320px, 300px); }
-      50.0%, 53.33% { transform: translate(440px, 300px); }
-      56.25%, 62.5% { transform: translate(400px, 300px); opacity: 1; }
-      62.51%, 100% { opacity: 0; transform: translate(400px, 300px); }
-    }
-
-    /* Lasers */
-    .laser1 { animation: laser1-anim 24s infinite linear; }
-    .laser2 { animation: laser2-anim 24s infinite linear; }
-    .laser3 { animation: laser3-anim 24s infinite linear; }
-    .laser4 { animation: laser4-anim 24s infinite linear; }
-
-    @keyframes laser1-anim {
-      0%, 28.33% { transform: translate(250px, 300px) scaleY(0); opacity: 0; }
-      28.34% { opacity: 1; }
-      30.0% { transform: translate(250px, 130px) scaleY(1); opacity: 1; }
-      30.01%, 100% { opacity: 0; }
-    }
-    @keyframes laser2-anim {
-      0%, 36.67% { transform: translate(520px, 300px) scaleY(0); opacity: 0; }
-      36.68% { opacity: 1; }
-      38.33% { transform: translate(520px, 130px) scaleY(1); opacity: 1; }
-      38.34%, 100% { opacity: 0; }
-    }
-    @keyframes laser3-anim {
-      0%, 45.0% { transform: translate(320px, 300px) scaleY(0); opacity: 0; }
-      45.01% { opacity: 1; }
-      46.67% { transform: translate(320px, 130px) scaleY(1); opacity: 1; }
-      46.68%, 100% { opacity: 0; }
-    }
-    @keyframes laser4-anim {
-      0%, 53.33% { transform: translate(440px, 300px) scaleY(0); opacity: 0; }
-      53.34% { opacity: 1; }
-      55.0% { transform: translate(440px, 130px) scaleY(1); opacity: 1; }
-      55.01%, 100% { opacity: 0; }
-    }
-
-    /* Bugs */
-    .bug1 { animation: bug1-anim 24s infinite linear; }
-    .bug2 { animation: bug2-anim 24s infinite linear; }
-    .bug3 { animation: bug3-anim 24s infinite linear; }
-    .bug4 { animation: bug4-anim 24s infinite linear; }
-
-    @keyframes bug1-anim {
-      0%, 20.83% { opacity: 0; transform: translate(250px, -50px); }
-      20.84% { opacity: 1; transform: translate(250px, 70px); }
-      30.0% { opacity: 1; transform: translate(250px, 130px); }
-      30.01%, 100% { opacity: 0; }
-    }
-    @keyframes bug2-anim {
-      0%, 20.83% { opacity: 0; transform: translate(520px, -50px); }
-      20.84% { opacity: 1; transform: translate(520px, 70px); }
-      38.33% { opacity: 1; transform: translate(520px, 130px); }
-      38.34%, 100% { opacity: 0; }
-    }
-    @keyframes bug3-anim {
-      0%, 20.83% { opacity: 0; transform: translate(320px, -50px); }
-      20.84% { opacity: 1; transform: translate(320px, 70px); }
-      46.67% { opacity: 1; transform: translate(320px, 130px); }
-      46.68%, 100% { opacity: 0; }
-    }
-    @keyframes bug4-anim {
-      0%, 20.83% { opacity: 0; transform: translate(440px, -50px); }
-      20.84% { opacity: 1; transform: translate(440px, 70px); }
-      55.0% { opacity: 1; transform: translate(440px, 130px); }
-      55.01%, 100% { opacity: 0; }
-    }
-
-    /* Explosions */
-    .exp1 { animation: exp1-anim 24s infinite linear; }
-    .exp2 { animation: exp2-anim 24s infinite linear; }
-    .exp3 { animation: exp3-anim 24s infinite linear; }
-    .exp4 { animation: exp4-anim 24s infinite linear; }
-
-    @keyframes exp1-anim {
-      0%, 30.0% { transform: translate(250px, 130px) scale(0); opacity: 0; }
-      30.01% { opacity: 1; }
-      31.67% { transform: translate(250px, 130px) scale(2); opacity: 0; }
-      31.68%, 100% { opacity: 0; }
-    }
-    @keyframes exp2-anim {
-      0%, 38.33% { transform: translate(520px, 130px) scale(0); opacity: 0; }
-      38.34% { opacity: 1; }
-      40.0% { transform: translate(520px, 130px) scale(2); opacity: 0; }
-      40.01%, 100% { opacity: 0; }
-    }
-    @keyframes exp3-anim {
-      0%, 46.67% { transform: translate(320px, 130px) scale(0); opacity: 0; }
-      46.68% { opacity: 1; }
-      48.33% { transform: translate(320px, 130px) scale(2); opacity: 0; }
-      48.34%, 100% { opacity: 0; }
-    }
-    @keyframes exp4-anim {
-      0%, 55.0% { transform: translate(440px, 130px) scale(0); opacity: 0; }
-      55.01% { opacity: 1; }
-      56.67% { transform: translate(440px, 130px) scale(2); opacity: 0; }
-      56.68%, 100% { opacity: 0; }
-    }
-
-    /* Score Updating */
-    .score1 { animation: s1-anim 24s infinite step-end; }
-    .score2 { animation: s2-anim 24s infinite step-end; }
-    .score3 { animation: s3-anim 24s infinite step-end; }
-    .score4 { animation: s4-anim 24s infinite step-end; }
-    .score5 { animation: s5-anim 24s infinite step-end; }
-
-    @keyframes s1-anim { 0%, 20.83% { opacity:0; } 20.84%, 30.0% { opacity:1; } 30.01%, 100% { opacity:0; } }
-    @keyframes s2-anim { 0%, 30.0% { opacity:0; } 30.01%, 38.33% { opacity:1; } 38.34%, 100% { opacity:0; } }
-    @keyframes s3-anim { 0%, 38.33% { opacity:0; } 38.34%, 46.67% { opacity:1; } 46.68%, 100% { opacity:0; } }
-    @keyframes s4-anim { 0%, 46.67% { opacity:0; } 46.68%, 55.0% { opacity:1; } 55.01%, 100% { opacity:0; } }
-    @keyframes s5-anim { 0%, 55.0% { opacity:0; } 55.01%, 62.5% { opacity:1; } 62.51%, 100% { opacity:0; } }
-
-    /* Victory Banner */
-    .victory { animation: vic-anim 24s infinite linear; }
-    @keyframes vic-anim {
-      0%, 56.25% { opacity: 0; transform: translate(400px, 180px) scale(0.5); }
-      56.26% { opacity: 1; transform: translate(400px, 180px) scale(1); }
-      62.5% { opacity: 1; transform: translate(400px, 180px) scale(1); }
-      62.51%, 100% { opacity: 0; }
-    }
-
-    /* Dashboard Metrics & Graph */
-    .dash-bar1 { transform-origin: left center; animation: bar1-anim 24s infinite ease-out; }
-    .dash-bar2 { transform-origin: left center; animation: bar2-anim 24s infinite ease-out; }
-    .dash-bar3 { transform-origin: left center; animation: bar3-anim 24s infinite ease-out; }
-
-    @keyframes bar1-anim {
-      0%, 62.5% { transform: scaleX(0); }
-      68.75%, 95.83% { transform: scaleX(0.95); }
-      95.84%, 100% { transform: scaleX(0); }
-    }
-    @keyframes bar2-anim {
-      0%, 67.5% { transform: scaleX(0); }
-      73.75%, 95.83% { transform: scaleX(0.85); }
-      95.84%, 100% { transform: scaleX(0); }
-    }
-    @keyframes bar3-anim {
-      0%, 72.5% { transform: scaleX(0); }
-      78.75%, 95.83% { transform: scaleX(0.90); }
-      95.84%, 100% { transform: scaleX(0); }
-    }
-
-    .pct1 { animation: p1-anim 24s infinite step-end; }
-    .pct2 { animation: p2-anim 24s infinite step-end; }
-    .pct3 { animation: p3-anim 24s infinite step-end; }
-    @keyframes p1-anim { 0%, 68.75% { opacity: 0; } 68.76%, 95.83% { opacity: 1; } 95.84%, 100% { opacity: 0; } }
-    @keyframes p2-anim { 0%, 73.75% { opacity: 0; } 73.76%, 95.83% { opacity: 1; } 95.84%, 100% { opacity: 0; } }
-    @keyframes p3-anim { 0%, 78.75% { opacity: 0; } 78.76%, 95.83% { opacity: 1; } 95.84%, 100% { opacity: 0; } }
-
-    /* Network pulsing lines */
-    .dash-net-line {
-      stroke: #ff00ff;
-      stroke-width: 1.5;
-      stroke-dasharray: 8, 4;
-      animation: net-dash 1.5s infinite linear;
-    }
-    @keyframes net-dash {
-      to { stroke-dashoffset: -12; }
-    }
-
-    /* Glitch screen flicker */
-    .glitch-lines rect { animation: glitch-flicker 0.15s infinite alternate; }
-    @keyframes glitch-flicker {
-      0% { opacity: 0.1; }
-      100% { opacity: 0.8; }
-    }
-  </style>
-
   <!-- Console Casing Outer Body -->
   <rect x="5" y="5" width="790" height="430" rx="24" ry="24" fill="#1b172a" stroke="#2c2547" stroke-width="6" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.6))" />
-  
-  <!-- Sleek metallic shadow/bevel inside console -->
   <rect x="12" y="12" width="776" height="416" rx="18" ry="18" fill="none" stroke="#3d3561" stroke-width="2" />
 
   <!-- Four Flathead Corner Screws -->
-  <!-- Top Left -->
-  <circle cx="35" cy="35" r="7" fill="#4d4573" stroke="#251f3b" stroke-width="1.5" />
-  <line x1="31" y1="31" x2="39" y2="39" stroke="#1d182e" stroke-width="1.5" />
-  <!-- Top Right -->
-  <circle cx="765" cy="35" r="7" fill="#4d4573" stroke="#251f3b" stroke-width="1.5" />
-  <line x1="761" y1="39" x2="769" y2="31" stroke="#1d182e" stroke-width="1.5" />
-  <!-- Bottom Left -->
-  <circle cx="35" cy="405" r="7" fill="#4d4573" stroke="#251f3b" stroke-width="1.5" />
-  <line x1="31" y1="409" x2="39" y2="401" stroke="#1d182e" stroke-width="1.5" />
-  <!-- Bottom Right -->
-  <circle cx="765" cy="405" r="7" fill="#4d4573" stroke="#251f3b" stroke-width="1.5" />
-  <line x1="761" y1="401" x2="769" y2="409" stroke="#1d182e" stroke-width="1.5" />
+  <g fill="#4d4573" stroke="#251f3b" stroke-width="1.5">
+    <circle cx="35" cy="35" r="7" /><line x1="31" y1="31" x2="39" y2="39" stroke="#1d182e" stroke-width="1.5" />
+    <circle cx="765" cy="35" r="7" /><line x1="761" y1="39" x2="769" y2="31" stroke="#1d182e" stroke-width="1.5" />
+    <circle cx="35" cy="405" r="7" /><line x1="31" y1="409" x2="39" y2="401" stroke="#1d182e" stroke-width="1.5" />
+    <circle cx="765" cy="405" r="7" /><line x1="761" y1="401" x2="769" y2="409" stroke="#1d182e" stroke-width="1.5" />
+  </g>
 
   <!-- D-PAD Control (Left side) -->
   <g transform="translate(70, 210)">
     <circle cx="0" cy="0" r="38" fill="#110e1c" stroke="#2c2547" stroke-width="3" />
-    <!-- Cross -->
-    <path d="M -10,-28 h 20 v 18 h 18 v 20 h -18 v 18 h -20 v -18 h -18 v -20 h 18 z" fill="#2d264a" rx="2" ry="2" stroke="#110e1c" stroke-width="1" />
+    <path d="M -10,-28 h 20 v 18 h 18 v 20 h -18 v 18 h -20 v -18 h -18 v -20 h 18 z" fill="#2d264a" stroke="#110e1c" stroke-width="1" />
     <circle cx="0" cy="0" r="6" fill="#110e1c" />
-    <!-- Arrow notches -->
     <polygon points="0,-24 -4,-20 4,-20" fill="#110e1c" />
     <polygon points="0,24 -4,20 4,20" fill="#110e1c" />
     <polygon points="-24,0 -20,-4 -20,4" fill="#110e1c" />
@@ -376,53 +115,85 @@
   <!-- Action Buttons (Right side) -->
   <g transform="translate(710, 210)">
     <circle cx="0" cy="0" r="38" fill="#110e1c" stroke="#2c2547" stroke-width="3" />
-    <!-- B Button -->
     <g transform="translate(-16, 12)">
-      <circle cx="0" cy="0" r="14" fill="#ff00ff" stroke="#aa00aa" stroke-width="1.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.4))" />
+      <circle cx="0" cy="0" r="14" fill="#ff00ff" stroke="#aa00aa" stroke-width="1.5" />
       <text x="0" y="5" fill="#ffffff" font-family="'SF Mono', Monaco, monospace" font-size="14" font-weight="bold" text-anchor="middle">B</text>
     </g>
-    <!-- A Button -->
     <g transform="translate(16, -12)">
-      <circle cx="0" cy="0" r="14" fill="#00ffff" stroke="#00aaaa" stroke-width="1.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.4))" />
+      <circle cx="0" cy="0" r="14" fill="#00ffff" stroke="#00aaaa" stroke-width="1.5" />
       <text x="0" y="5" fill="#110e1c" font-family="'SF Mono', Monaco, monospace" font-size="14" font-weight="bold" text-anchor="middle">A</text>
     </g>
   </g>
 
   <!-- SELECT & START (Bottom Center) -->
-  <g transform="translate(240, 395)">
-    <rect x="0" y="0" width="40" height="12" rx="6" fill="#2d264a" stroke="#110e1c" stroke-width="1.5" transform="rotate(-20)" />
-    <text x="5" y="24" fill="#584f80" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold">SELECT</text>
+  <g transform="translate(240, 395)" fill="#2d264a" stroke="#110e1c" stroke-width="1.5">
+    <rect x="0" y="0" width="40" height="12" rx="6" transform="rotate(-20)" />
+    <text x="5" y="24" fill="#584f80" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" stroke="none">SELECT</text>
   </g>
-  <g transform="translate(320, 395)">
-    <rect x="0" y="0" width="40" height="12" rx="6" fill="#2d264a" stroke="#110e1c" stroke-width="1.5" transform="rotate(-20)" />
-    <text x="10" y="24" fill="#584f80" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold">START</text>
+  <g transform="translate(320, 395)" fill="#2d264a" stroke="#110e1c" stroke-width="1.5">
+    <rect x="0" y="0" width="40" height="12" rx="6" transform="rotate(-20)" />
+    <text x="10" y="24" fill="#584f80" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" stroke="none">START</text>
   </g>
 
   <!-- Speaker Slits (Bottom Right side) -->
   <g transform="translate(480, 385)" stroke="#110e1c" stroke-width="4" stroke-linecap="round">
-    <line x1="0" y1="15" x2="10" y2="0" />
-    <line x1="10" y1="15" x2="20" y2="0" />
-    <line x1="20" y1="15" x2="30" y2="0" />
-    <line x1="30" y1="15" x2="40" y2="0" />
-    <line x1="40" y1="15" x2="50" y2="0" />
+    <line x1="0" y1="15" x2="10" y2="0" /><line x1="10" y1="15" x2="20" y2="0" /><line x1="20" y1="15" x2="30" y2="0" /><line x1="30" y1="15" x2="40" y2="0" /><line x1="40" y1="15" x2="50" y2="0" />
   </g>
 
   <!-- Console Screen Bezel -->
   <rect x="125" y="45" width="550" height="310" rx="14" fill="#0c0914" stroke="#251f3b" stroke-width="4" />
   
   <!-- LED Power Light (Left of Screen) -->
-  <circle cx="102" cy="75" r="4" fill="#00ff66" class="power-led" />
+  <circle cx="102" cy="75" r="4" fill="#00ff66">
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
   <text x="102" y="90" fill="#584f80" font-family="'SF Mono', Monaco, monospace" font-size="7" text-anchor="middle">POWER</text>
 
   <!-- ==================== THE SCREEN ==================== -->
-  <!-- Screen Base Background -->
   <rect x="140" y="60" width="520" height="280" rx="8" fill="#0a0715" />
   
+  <!-- SCREEN CONTENT GROUP WITH CLIP PATH -->
   <g clip-path="url(#screen-clip)">
-    <!-- Moving Grid / Background Lines in Game Phase -->
-    <g class="stage-game">
-      <!-- Stars / Dust scrolling down -->
-      <g class="space-stars">
+
+    <!-- ==================== PHASE 1: SYSTEM BOOT ==================== -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.2083;0.2084;1" dur="24s" repeatCount="indefinite" />
+      <animate attributeName="visibility" values="visible;visible;hidden;hidden" keyTimes="0;0.2083;0.2084;1" dur="24s" repeatCount="indefinite" />
+      
+      <g fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="11" font-weight="bold" filter="url(#glow-green)">
+        <!-- Line 1 -->
+        <g clip-path="url(#clip-l1)"><text x="160" y="95">hiron1999@accenture:~$ ./init_developer.sh</text></g>
+        <!-- Line 2 -->
+        <g clip-path="url(#clip-l2)"><text x="160" y="120">&gt; Spawning Java Runtime 17 .............. [OK]</text></g>
+        <!-- Line 3 -->
+        <g clip-path="url(#clip-l3)"><text x="160" y="145">&gt; Connecting Apache Kafka cluster ........ [OK]</text></g>
+        <!-- Line 4 -->
+        <g clip-path="url(#clip-l4)"><text x="160" y="170">&gt; Initializing Spring Boot Microservices .. [OK]</text></g>
+        <!-- Line 5 -->
+        <g clip-path="url(#clip-l5)"><text x="160" y="195">&gt; Launching "Bug Invaders" game engine ... [LOAD]</text></g>
+      </g>
+      
+      <!-- Blinking cursors at end of lines -->
+      <g fill="#00ff66" filter="url(#glow-green)">
+        <g><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.0208;0.0209;0.0625;1" dur="24s" repeatCount="indefinite" /><rect x="465" y="83" width="8" height="13"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></rect></g>
+        <g><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.0625;0.0626;0.1042;1" dur="24s" repeatCount="indefinite" /><rect x="480" y="108" width="8" height="13"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></rect></g>
+        <g><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1042;0.1043;0.1458;1" dur="24s" repeatCount="indefinite" /><rect x="480" y="133" width="8" height="13"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></rect></g>
+        <g><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1458;0.1459;0.1875;1" dur="24s" repeatCount="indefinite" /><rect x="480" y="158" width="8" height="13"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></rect></g>
+        <g><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1875;0.1876;0.2083;1" dur="24s" repeatCount="indefinite" /><rect x="480" y="183" width="8" height="13"><animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></rect></g>
+      </g>
+      
+      <!-- Static Grid overlay in background -->
+      <path d="M 140,240 h 520 M 140,280 h 520 M 270,60 v 280 M 400,60 v 280 M 530,60 v 280" stroke="#00ff66" stroke-width="0.5" opacity="0.08" />
+    </g>
+
+    <!-- ==================== PHASE 2: BUG INVADERS GAME ==================== -->
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2083;0.2084;0.625;0.6251;1" dur="24s" repeatCount="indefinite" />
+      <animate attributeName="visibility" values="hidden;hidden;visible;visible;hidden;hidden" keyTimes="0;0.2083;0.2084;0.625;0.6251;1" dur="24s" repeatCount="indefinite" />
+
+      <!-- Scrolling Stars Background -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,280" dur="5s" repeatCount="indefinite" />
         <circle cx="180" cy="30" r="1.5" fill="#ffffff" opacity="0.8"/>
         <circle cx="280" cy="80" r="1" fill="#00ffff" opacity="0.6"/>
         <circle cx="480" cy="110" r="1.5" fill="#ff00ff" opacity="0.7"/>
@@ -432,62 +203,17 @@
         <circle cx="510" cy="190" r="1" fill="#ffffff" opacity="0.4"/>
         <circle cx="430" cy="260" r="2" fill="#ff00ff" opacity="0.6"/>
         
-        <!-- Offset stars to loop seamlessly -->
-        <circle cx="180" cy="310" r="1.5" fill="#ffffff" opacity="0.8"/>
-        <circle cx="280" cy="360" r="1" fill="#00ffff" opacity="0.6"/>
-        <circle cx="480" cy="390" r="1.5" fill="#ff00ff" opacity="0.7"/>
-        <circle cx="600" cy="320" r="1" fill="#ffffff" opacity="0.5"/>
-        <circle cx="220" cy="440" r="1.5" fill="#ffffff" opacity="0.8"/>
-        <circle cx="360" cy="500" r="1" fill="#00ffff" opacity="0.9"/>
-        <circle cx="510" cy="470" r="1" fill="#ffffff" opacity="0.4"/>
-        <circle cx="430" cy="540" r="2" fill="#ff00ff" opacity="0.6"/>
+        <!-- Seamless Loop Offset Stars -->
+        <circle cx="180" cy="-250" r="1.5" fill="#ffffff" opacity="0.8"/>
+        <circle cx="280" cy="-200" r="1" fill="#00ffff" opacity="0.6"/>
+        <circle cx="480" cy="-170" r="1.5" fill="#ff00ff" opacity="0.7"/>
+        <circle cx="600" cy="-240" r="1" fill="#ffffff" opacity="0.5"/>
+        <circle cx="220" cy="-120" r="1.5" fill="#ffffff" opacity="0.8"/>
+        <circle cx="360" cy="-60" r="1" fill="#00ffff" opacity="0.9"/>
+        <circle cx="510" cy="-90" r="1" fill="#ffffff" opacity="0.4"/>
+        <circle cx="430" cy="-20" r="2" fill="#ff00ff" opacity="0.6"/>
       </g>
-    </g>
 
-    <!-- CRT Screen Grid Lines (Static Grid Background) -->
-    <rect x="140" y="60" width="520" height="280" fill="url(#scanlines)" pointer-events="none" />
-
-    <!-- ==================== PHASE 1: SYSTEM BOOT ==================== -->
-    <g class="stage-boot">
-      <!-- Boot Text Terminal Lines -->
-      <g fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="12" filter="url(#glow-green)" xml:space="preserve">
-        <!-- Line 1 -->
-        <g clip-path="url(#clip-l1)">
-          <text x="160" y="95">hiron1999@accenture:~$ ./init_developer.sh</text>
-        </g>
-        <!-- Line 2 -->
-        <g clip-path="url(#clip-l2)">
-          <text x="160" y="120">> Spawning Java Runtime 17 .............. [OK]</text>
-        </g>
-        <!-- Line 3 -->
-        <g clip-path="url(#clip-l3)">
-          <text x="160" y="145">> Connecting Apache Kafka cluster ........ [OK]</text>
-        </g>
-        <!-- Line 4 -->
-        <g clip-path="url(#clip-l4)">
-          <text x="160" y="170">> Initializing Spring Boot Microservices .. [OK]</text>
-        </g>
-        <!-- Line 5 -->
-        <g clip-path="url(#clip-l5)">
-          <text x="160" y="195">> Launching "Bug Invaders" game engine ... [LOAD]</text>
-        </g>
-      </g>
-      
-      <!-- Blinking cursors at end of lines -->
-      <g fill="#00ff66" filter="url(#glow-green)">
-        <g class="cur-g1"><rect x="465" y="85" width="8" height="13" class="cursor-blink" /></g>
-        <g class="cur-g2"><rect x="480" y="110" width="8" height="13" class="cursor-blink" /></g>
-        <g class="cur-g3"><rect x="480" y="135" width="8" height="13" class="cursor-blink" /></g>
-        <g class="cur-g4"><rect x="480" y="160" width="8" height="13" class="cursor-blink" /></g>
-        <g class="cur-g5"><rect x="480" y="185" width="8" height="13" class="cursor-blink" /></g>
-      </g>
-      
-      <!-- Grid Overlay design in background -->
-      <path d="M 140,240 h 520 M 140,280 h 520 M 270,60 v 280 M 400,60 v 280 M 530,60 v 280" stroke="#00ff66" stroke-width="0.5" opacity="0.1" />
-    </g>
-
-    <!-- ==================== PHASE 2: BUG INVADERS GAME ==================== -->
-    <g class="stage-game">
       <!-- Game UI Header -->
       <g fill="#00ffff" font-family="'SF Mono', Monaco, monospace" font-size="11" font-weight="bold" filter="url(#glow-cyan)">
         <text x="160" y="80">HP: 100%</text>
@@ -495,135 +221,212 @@
         <text x="430" y="80">SCORE:</text>
       </g>
       
-      <!-- Stacking Score Values (swapping visibility) -->
+      <!-- Stacking Score Values -->
       <g fill="#00ffff" font-family="'SF Mono', Monaco, monospace" font-size="11" font-weight="bold" filter="url(#glow-cyan)">
-        <text x="485" y="80" class="score1">0000</text>
-        <text x="485" y="80" class="score2">0100</text>
-        <text x="485" y="80" class="score3">0350</text>
-        <text x="485" y="80" class="score4">0600</text>
-        <text x="485" y="80" class="score5">0999</text>
+        <text x="485" y="80"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2083;0.2084;0.30;0.3001;1" dur="24s" repeatCount="indefinite" />0000</text>
+        <text x="485" y="80"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.30;0.3001;0.3833;0.3834;1" dur="24s" repeatCount="indefinite" />0100</text>
+        <text x="485" y="80"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3833;0.3834;0.4667;0.4668;1" dur="24s" repeatCount="indefinite" />0350</text>
+        <text x="485" y="80"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4667;0.4668;0.55;0.5501;1" dur="24s" repeatCount="indefinite" />0600</text>
+        <text x="485" y="80"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.5501;0.625;0.6251;1" dur="24s" repeatCount="indefinite" />0999</text>
       </g>
       
-      <!-- Separator line -->
-      <line x1="140" y1="90" x2="660" y2="90" stroke="#00ffff" stroke-width="1" opacity="0.4" />
+      <line x1="140" y1="90" x2="660" y2="90" stroke="#00ffff" stroke-width="1" opacity="0.3" />
 
-      <!-- Spaceship -->
-      <use href="#player-ship" class="ship" />
+      <!-- Spaceship (SMIL Moving) -->
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="400,300; 400,300; 250,300; 250,300; 520,300; 520,300; 320,300; 320,300; 440,300; 440,300; 400,300; 400,300"
+          keyTimes="0; 0.2083; 0.25; 0.2833; 0.3333; 0.3667; 0.4167; 0.45; 0.50; 0.5333; 0.5625; 1"
+          dur="24s" repeatCount="indefinite" />
+        <use href="#player-ship" xlink:href="#player-ship" />
+      </g>
 
-      <!-- Lasers -->
-      <line class="laser1" x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)" />
-      <line class="laser2" x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)" />
-      <line class="laser3" x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)" />
-      <line class="laser4" x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)" />
+      <!-- Lasers (SMIL Firing) -->
+      <!-- Laser 1 -->
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)">
+        <animateTransform attributeName="transform" type="translate" values="250,300; 250,300; 250,130; 250,130" keyTimes="0; 0.2833; 0.30; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2833;0.2834;0.30;0.3001;1" dur="24s" repeatCount="indefinite" />
+      </line>
+      <!-- Laser 2 -->
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)">
+        <animateTransform attributeName="transform" type="translate" values="520,300; 520,300; 520,130; 520,130" keyTimes="0; 0.3667; 0.3833; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3667;0.3668;0.3833;0.3834;1" dur="24s" repeatCount="indefinite" />
+      </line>
+      <!-- Laser 3 -->
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)">
+        <animateTransform attributeName="transform" type="translate" values="320,300; 320,300; 320,130; 320,130" keyTimes="0; 0.45; 0.4667; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.45;0.4501;0.4667;0.4668;1" dur="24s" repeatCount="indefinite" />
+      </line>
+      <!-- Laser 4 -->
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#00ffff" stroke-width="3" filter="url(#glow-cyan)">
+        <animateTransform attributeName="transform" type="translate" values="440,300; 440,300; 440,130; 440,130" keyTimes="0; 0.5333; 0.55; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5333;0.5334;0.55;0.5501;1" dur="24s" repeatCount="indefinite" />
+      </line>
 
-      <!-- Bugs / Alien Invaders -->
-      <!-- Bug 1: NPE (Magenta) -->
-      <g class="bug1">
-        <use href="#bug-invader" fill="#ff00ff" filter="url(#glow-magenta)" />
+      <!-- Bug Invaders -->
+      <!-- Bug 1: NPE -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="250,-50; 250,-50; 250,70; 250,130; 250,130" keyTimes="0; 0.2083; 0.2084; 0.30; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0; 0.2083; 0.2084; 0.30; 0.3001; 1" dur="24s" repeatCount="indefinite" />
+        <use href="#bug-invader" xlink:href="#bug-invader" fill="#ff00ff" filter="url(#glow-magenta)" />
         <text x="0" y="16" fill="#ff00ff" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-magenta)">NPE</text>
       </g>
-      
-      <!-- Bug 2: OOM (Red/Yellow) -->
-      <g class="bug2">
-        <use href="#bug-invader" fill="#ff3300" filter="url(#glow-magenta)" />
+      <!-- Bug 2: OOM -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="520,-50; 520,-50; 520,70; 520,130; 520,130" keyTimes="0; 0.2083; 0.2084; 0.3833; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0; 0.2083; 0.2084; 0.3833; 0.3834; 1" dur="24s" repeatCount="indefinite" />
+        <use href="#bug-invader" xlink:href="#bug-invader" fill="#ff3300" filter="url(#glow-magenta)" />
         <text x="0" y="16" fill="#ff3300" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-magenta)">OOM</text>
       </g>
-      
-      <!-- Bug 3: 404 Error (Red) -->
-      <g class="bug3">
-        <use href="#bug-invader" fill="#ff0055" filter="url(#glow-magenta)" />
+      <!-- Bug 3: 404 -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="320,-50; 320,-50; 320,70; 320,130; 320,130" keyTimes="0; 0.2083; 0.2084; 0.4667; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0; 0.2083; 0.2084; 0.4667; 0.4668; 1" dur="24s" repeatCount="indefinite" />
+        <use href="#bug-invader" xlink:href="#bug-invader" fill="#ff0055" filter="url(#glow-magenta)" />
         <text x="0" y="16" fill="#ff0055" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-magenta)">404</text>
       </g>
-      
-      <!-- Bug 4: Deadlock (Magenta) -->
-      <g class="bug4">
-        <use href="#bug-invader" fill="#e6007e" filter="url(#glow-magenta)" />
+      <!-- Bug 4: Deadlock -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="440,-50; 440,-50; 440,70; 440,130; 440,130" keyTimes="0; 0.2083; 0.2084; 0.55; 1" dur="24s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0; 0.2083; 0.2084; 0.55; 0.5501; 1" dur="24s" repeatCount="indefinite" />
+        <use href="#bug-invader" xlink:href="#bug-invader" fill="#e6007e" filter="url(#glow-magenta)" />
         <text x="0" y="16" fill="#e6007e" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-magenta)">DEADLOCK</text>
       </g>
 
-      <!-- Explosions -->
-      <g class="exp1">
-        <circle cx="0" cy="0" r="10" fill="none" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
-        <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+      <!-- Explosions (Nested scale/translate groups) -->
+      <!-- Explosion 1 -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="250,130; 250,130" keyTimes="0;1" dur="24s" repeatCount="indefinite" />
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="0; 0; 0.1; 1.6; 1.6" keyTimes="0; 0.30; 0.3001; 0.3167; 1" dur="24s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.30;0.3001;0.3167;1" dur="24s" repeatCount="indefinite" />
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+        </g>
       </g>
-      <g class="exp2">
-        <circle cx="0" cy="0" r="10" fill="none" stroke="#ff3300" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
-        <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+      <!-- Explosion 2 -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="520,130; 520,130" keyTimes="0;1" dur="24s" repeatCount="indefinite" />
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="0; 0; 0.1; 1.6; 1.6" keyTimes="0; 0.3833; 0.3834; 0.40; 1" dur="24s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.3833;0.3834;0.40;1" dur="24s" repeatCount="indefinite" />
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#ff3300" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+        </g>
       </g>
-      <g class="exp3">
-        <circle cx="0" cy="0" r="10" fill="none" stroke="#ff0055" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
-        <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+      <!-- Explosion 3 -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="320,130; 320,130" keyTimes="0;1" dur="24s" repeatCount="indefinite" />
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="0; 0; 0.1; 1.6; 1.6" keyTimes="0; 0.4667; 0.4668; 0.4833; 1" dur="24s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4667;0.4668;0.4833;1" dur="24s" repeatCount="indefinite" />
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#ff0055" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+        </g>
       </g>
-      <g class="exp4">
-        <circle cx="0" cy="0" r="10" fill="none" stroke="#e6007e" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
-        <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+      <!-- Explosion 4 -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="440,130; 440,130" keyTimes="0;1" dur="24s" repeatCount="indefinite" />
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="0; 0; 0.1; 1.6; 1.6" keyTimes="0; 0.55; 0.5501; 0.5667; 1" dur="24s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.55;0.5501;0.5667;1" dur="24s" repeatCount="indefinite" />
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#e6007e" stroke-width="2" stroke-dasharray="4, 2" filter="url(#glow-magenta)" />
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2, 4" />
+        </g>
       </g>
 
-      <!-- Victory Screen Overlay -->
-      <g class="victory" fill="#00ffff" font-family="'SF Mono', Monaco, monospace" text-anchor="middle" filter="url(#glow-cyan)">
-        <text x="0" y="-15" font-size="20" font-weight="bold">STAGE CLEARED!</text>
-        <text x="0" y="15" font-size="13" font-weight="bold" fill="#ff00ff" filter="url(#glow-magenta)">ALL BUGS DESTRUCTED</text>
+      <!-- Victory Screen (SMIL scale/translate) -->
+      <g fill="#00ffff" font-family="'SF Mono', Monaco, monospace" text-anchor="middle" filter="url(#glow-cyan)">
+        <animateTransform attributeName="transform" type="translate" values="400,180; 400,180" keyTimes="0;1" dur="24s" repeatCount="indefinite" />
+        <g>
+          <animateTransform attributeName="transform" type="scale" values="0.5; 0.5; 1; 1; 0.5" keyTimes="0; 0.5625; 0.5626; 0.625; 1" dur="24s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5625;0.5626;0.625;1" dur="24s" repeatCount="indefinite" />
+          <text x="0" y="-15" font-size="20" font-weight="bold">STAGE CLEARED!</text>
+          <text x="0" y="15" font-size="13" font-weight="bold" fill="#ff00ff" filter="url(#glow-magenta)">ALL BUGS DESTRUCTED</text>
+        </g>
       </g>
     </g>
 
     <!-- ==================== PHASE 3: DEVELOPER DASHBOARD ==================== -->
-    <g class="stage-dash">
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.625;0.6251;0.9583;0.9584;1" dur="24s" repeatCount="indefinite" />
+      <animate attributeName="visibility" values="hidden;hidden;visible;visible;hidden;hidden" keyTimes="0;0.625;0.6251;0.9583;0.9584;1" dur="24s" repeatCount="indefinite" />
+
       <!-- Title -->
-      <text x="160" y="95" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="14" font-weight="bold" filter="url(#glow-green)">HIRON DEV-METRICS V2.0</text>
-      <line x1="160" y1="105" x2="640" y2="105" stroke="#00ff66" stroke-width="1.5" opacity="0.4" filter="url(#glow-green)" />
+      <text x="160" y="95" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="13" font-weight="bold" filter="url(#glow-green)">HIRON DEV-TELEMETRY V2.0</text>
+      <line x1="160" y1="105" x2="640" y2="105" stroke="#00ff66" stroke-width="1.5" opacity="0.3" filter="url(#glow-green)" />
 
-      <!-- Left Hand Side: Skill Metric Bars -->
+      <!-- Skill Metric Bar Animations -->
       <g fill="#ffffff" font-family="'SF Mono', Monaco, monospace" font-size="11" font-weight="bold">
-        <!-- Metric 1: Java & Spring -->
+        <!-- Java -->
         <text x="160" y="130" fill="#ff00ff" filter="url(#glow-magenta)">JAVA &amp; SPRING BOOT</text>
-        <rect x="160" y="138" width="160" height="12" rx="4" fill="none" stroke="#ff00ff" stroke-width="1.5" opacity="0.5" />
-        <rect x="162" y="140" width="156" height="8" rx="2" fill="#ff00ff" class="dash-bar1" filter="url(#glow-magenta)" />
-        <text x="330" y="148" fill="#ff00ff" class="pct1">95%</text>
+        <rect x="160" y="138" width="160" height="12" rx="4" fill="none" stroke="#ff00ff" stroke-width="1.5" opacity="0.4" />
+        <rect x="162" y="140" height="8" rx="2" fill="#ff00ff" filter="url(#glow-magenta)">
+          <animate attributeName="width" values="0; 0; 156; 156; 0" keyTimes="0; 0.625; 0.6875; 0.9583; 1" dur="24s" repeatCount="indefinite" />
+        </rect>
+        <text x="330" y="148" fill="#ff00ff">
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6875;0.6876;0.9583;1" dur="24s" repeatCount="indefinite" />95%
+        </text>
 
-        <!-- Metric 2: Kafka & Message Broker -->
+        <!-- Kafka -->
         <text x="160" y="180" fill="#00ffff" filter="url(#glow-cyan)">KAFKA &amp; DISTRIBUTED MQ</text>
-        <rect x="160" y="188" width="160" height="12" rx="4" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.5" />
-        <rect x="162" y="190" width="156" height="8" rx="2" fill="#00ffff" class="dash-bar2" filter="url(#glow-cyan)" />
-        <text x="330" y="198" fill="#00ffff" class="pct2">85%</text>
+        <rect x="160" y="188" width="160" height="12" rx="4" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.4" />
+        <rect x="162" y="190" height="8" rx="2" fill="#00ffff" filter="url(#glow-cyan)">
+          <animate attributeName="width" values="0; 0; 136; 136; 0" keyTimes="0; 0.625; 0.7375; 0.9583; 1" dur="24s" repeatCount="indefinite" />
+        </rect>
+        <text x="330" y="198" fill="#00ffff">
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7375;0.7376;0.9583;1" dur="24s" repeatCount="indefinite" />85%
+        </text>
 
-        <!-- Metric 3: Cloud & PCF/Docker -->
+        <!-- Cloud -->
         <text x="160" y="230" fill="#00ff66" filter="url(#glow-green)">CLOUD &amp; DEVOPS (AWS/GCP)</text>
-        <rect x="160" y="238" width="160" height="12" rx="4" fill="none" stroke="#00ff66" stroke-width="1.5" opacity="0.5" />
-        <rect x="162" y="240" width="156" height="8" rx="2" fill="#00ff66" class="dash-bar3" filter="url(#glow-green)" />
-        <text x="330" y="248" fill="#00ff66" class="pct3">90%</text>
+        <rect x="160" y="238" width="160" height="12" rx="4" fill="none" stroke="#00ff66" stroke-width="1.5" opacity="0.4" />
+        <rect x="162" y="240" height="8" rx="2" fill="#00ff66" filter="url(#glow-green)">
+          <animate attributeName="width" values="0; 0; 144; 144; 0" keyTimes="0; 0.625; 0.7875; 0.9583; 1" dur="24s" repeatCount="indefinite" />
+        </rect>
+        <text x="330" y="248" fill="#00ff66">
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7875;0.7876;0.9583;1" dur="24s" repeatCount="indefinite" />90%
+        </text>
       </g>
 
-      <!-- Right Hand Side: Pulsing Microservices Topology Graph -->
+      <!-- Topology Graph Network -->
       <g transform="translate(520, 200)">
         <!-- Node Connections (Pulsing dashed lines) -->
-        <line x1="0" y1="0" x2="-60" y2="-50" class="dash-net-line" />
-        <line x1="0" y1="0" x2="60" y2="-50" class="dash-net-line" />
-        <line x1="0" y1="0" x2="-60" y2="50" class="dash-net-line" />
-        <line x1="0" y1="0" x2="60" y2="50" class="dash-net-line" />
+        <line x1="0" y1="0" x2="-60" y2="-50" stroke="#ff00ff" stroke-width="1.5" stroke-dasharray="8, 4">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.2s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="60" y2="-50" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="8, 4">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.2s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="-60" y2="50" stroke="#ff00ff" stroke-width="1.5" stroke-dasharray="8, 4">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.2s" repeatCount="indefinite" />
+        </line>
+        <line x1="0" y1="0" x2="60" y2="50" stroke="#00ff66" stroke-width="1.5" stroke-dasharray="8, 4">
+          <animate attributeName="stroke-dashoffset" values="0;-12" dur="1.2s" repeatCount="indefinite" />
+        </line>
 
         <!-- Central HIRON Node -->
         <circle cx="0" cy="0" r="22" fill="#0a0715" stroke="#00ff66" stroke-width="2" filter="url(#glow-green)" />
-        <text x="0" y="4" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-green)">HIRON</text>
+        <text x="0" y="3" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle" filter="url(#glow-green)">HIRON</text>
 
-        <!-- Surrounding Skill Nodes -->
-        <!-- Spring -->
+        <!-- Spring Node -->
         <circle cx="-60" cy="-50" r="14" fill="#0a0715" stroke="#ff00ff" stroke-width="1.5" filter="url(#glow-magenta)" />
         <text x="-60" y="-70" fill="#ff00ff" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">Spring</text>
         <circle cx="-60" cy="-50" r="4" fill="#ff00ff" />
 
-        <!-- Kafka -->
+        <!-- Kafka Node -->
         <circle cx="60" cy="-50" r="14" fill="#0a0715" stroke="#00ffff" stroke-width="1.5" filter="url(#glow-cyan)" />
         <text x="60" y="-70" fill="#00ffff" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">Kafka</text>
         <circle cx="60" cy="-50" r="4" fill="#00ffff" />
 
-        <!-- DB / Redis -->
+        <!-- Redis Node -->
         <circle cx="-60" cy="50" r="14" fill="#0a0715" stroke="#ff00ff" stroke-width="1.5" filter="url(#glow-magenta)" />
-        <text x="-60" y="75" fill="#ff00ff" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">Redis/SQL</text>
+        <text x="-60" y="72" fill="#ff00ff" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">Redis</text>
         <circle cx="-60" cy="50" r="4" fill="#ff00ff" />
 
-        <!-- Cloud -->
+        <!-- Cloud Node -->
         <circle cx="60" cy="50" r="14" fill="#0a0715" stroke="#00ff66" stroke-width="1.5" filter="url(#glow-green)" />
-        <text x="60" y="75" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">AWS/GCP</text>
+        <text x="60" y="72" fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="9" font-weight="bold" text-anchor="middle">Cloud</text>
         <circle cx="60" cy="50" r="4" fill="#00ff66" />
       </g>
       
@@ -632,16 +435,22 @@
     </g>
 
     <!-- ==================== PHASE 4: GLITCH / MATRIX RESET ==================== -->
-    <g class="stage-glitch">
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.9583;0.9584;0.999;1" dur="24s" repeatCount="indefinite" />
+      <animate attributeName="visibility" values="hidden;hidden;visible;visible;hidden" keyTimes="0;0.9583;0.9584;0.999;1" dur="24s" repeatCount="indefinite" />
+      
       <rect x="140" y="60" width="520" height="280" fill="#020108" />
-      <g class="glitch-lines">
-        <rect x="140" y="80" width="520" height="12" fill="#00ffff" opacity="0.6" />
-        <rect x="140" y="140" width="520" height="6" fill="#ff00ff" opacity="0.5" />
-        <rect x="140" y="210" width="520" height="18" fill="#00ff00" opacity="0.7" />
-        <rect x="140" y="270" width="520" height="8" fill="#00ffff" opacity="0.5" />
-        <rect x="140" y="110" width="520" height="30" fill="#ff00ff" opacity="0.3" />
+      
+      <!-- Glitchy horizontal line blocks -->
+      <g>
+        <rect x="140" y="80" width="520" height="12" fill="#00ffff"><animate attributeName="opacity" values="0.1; 0.8; 0.1" dur="0.15s" repeatCount="indefinite" /></rect>
+        <rect x="140" y="140" width="520" height="6" fill="#ff00ff"><animate attributeName="opacity" values="0.1; 0.7; 0.1" dur="0.12s" repeatCount="indefinite" /></rect>
+        <rect x="140" y="210" width="520" height="18" fill="#00ff00"><animate attributeName="opacity" values="0.2; 0.9; 0.2" dur="0.18s" repeatCount="indefinite" /></rect>
+        <rect x="140" y="270" width="520" height="8" fill="#00ffff"><animate attributeName="opacity" values="0.1; 0.6; 0.1" dur="0.1s" repeatCount="indefinite" /></rect>
+        <rect x="140" y="110" width="520" height="30" fill="#ff00ff"><animate attributeName="opacity" values="0.05; 0.4; 0.05" dur="0.2s" repeatCount="indefinite" /></rect>
       </g>
-      <!-- Binary Matrix code rain representations -->
+      
+      <!-- Falling binary matrix characters code -->
       <g fill="#00ff66" font-family="'SF Mono', Monaco, monospace" font-size="10" opacity="0.6" filter="url(#glow-green)">
         <text x="180" y="100">101001010111</text>
         <text x="320" y="150">010110001010</text>
@@ -650,6 +459,7 @@
         <text x="420" y="220">101010110001</text>
         <text x="550" y="260">011001010110</text>
       </g>
+      
       <text x="400" y="200" fill="#ffffff" font-family="'SF Mono', Monaco, monospace" font-size="22" font-weight="bold" text-anchor="middle" filter="url(#glow-cyan)">REBOOTING...</text>
     </g>
   </g>
@@ -659,4 +469,7 @@
 
   <!-- Screen Glass Reflection Overlay -->
   <rect x="140" y="60" width="520" height="280" rx="8" fill="url(#glare)" pointer-events="none" />
+  
+  <!-- CRT Screen Scanline Overlay -->
+  <rect x="140" y="60" width="520" height="280" rx="8" fill="url(#scanlines)" pointer-events="none" />
 </svg>

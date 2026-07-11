@@ -4,51 +4,16 @@
   <img src="retro_console.svg" width="800" alt="Hiron Saha's Retro Developer Console" />
 </p>
 
-<!-- TIC-TAC-TOE-START -->
+<!-- GAME-START -->
 <p align="center">
-  <b>🤖 CPU placed O. Your turn!</b>
+  <a href="https://hiron1999.github.io/hiron1999/game/index.html">
+    <img src="https://img.shields.io/badge/PLAY_BUG_INVADERS-00ffff?style=for-the-badge&logo=rocket&logoColor=000000" alt="Play Bug Invaders" />
+  </a>
 </p>
-
-  <table align="center" style="border-collapse: collapse; border: none; border-spacing: 4px;">
-    <tr>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/x.svg" width="70" height="70" alt="X" />
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/x.svg" width="70" height="70" alt="X" />
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/o.svg" width="70" height="70" alt="O" />
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/o.svg" width="70" height="70" alt="O" />
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/o.svg" width="70" height="70" alt="O" />
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C1%7C2&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <img src="assets/x.svg" width="70" height="70" alt="X" />
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C1&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
-      </td>
-      <td style="padding: 4px; border: none; background: transparent;">
-        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C2&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
-      </td>
-    </tr>
-  </table>
-
 <p align="center">
-  <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7Creset&body=Click+%22Submit+new+issue%22+to+reset+the+board%21"><img src="https://img.shields.io/badge/RESET_GAME-ff00ff?style=for-the-badge&logo=github&logoColor=ffffff" alt="Reset Game" /></a>
+  <em>🎮 I've built a real-time Space Shooter game in JS! Click the button above to eliminate bugs (NPE, OOM, 404, DEADLOCK) and save the system!</em>
 </p>
-<!-- TIC-TAC-TOE-END -->
+<!-- GAME-END -->
 
 Senior Software Developer based in India, specializing in enterprise-scale Java backend systems, Spring Boot microservices, distributed messaging architecture, and cloud platforms.
 
@@ -111,7 +76,7 @@ Senior Software Developer based in India, specializing in enterprise-scale Java 
 ### 📊 GitHub Statistics & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hiron1999&show_icons=true&title_color=00ffff&icon_color=ff00ff&text_color=ffffff&bg_color=0a0715&border_color=2c2547&count_private=true&hide_title=true" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=hiron1999&show_icons=true&title_color=00ffff&icon_color=ff00ff&text_color=ffffff&bg_color=0a0715&border_color=2c2547&hide_title=true" height="150" alt="GitHub Stats" />
   &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hiron1999&layout=compact&title_color=00ffff&icon_color=ff00ff&text_color=ffffff&bg_color=0a0715&border_color=2c2547&hide_title=true" height="150" alt="Top Languages" />
 </p>
