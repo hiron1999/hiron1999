@@ -1,0 +1,15 @@
+{
+  "board": [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+  ],
+  "winner": null,
+  "status": "\ud83c\udfae Your turn! Click any empty grid cell below to start."
+}

@@ -1,10 +1,60 @@
 # Hi there, I'm Hiron Saha 👋
 
-Senior Software Developer based in India, specializing in enterprise-scale Java backend systems, Spring Boot microservices, distributed messaging architecture, and cloud platforms. 
+<p align="center">
+  <img src="retro_console.svg" width="800" alt="Hiron Saha's Retro Developer Console" />
+</p>
+
+<!-- TIC-TAC-TOE-START -->
+<p align="center">
+  <b>🎮 Your turn! Click any empty grid cell below to start.</b>
+</p>
+
+  <table align="center" style="border-collapse: collapse; border: none; border-spacing: 4px;">
+    <tr>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C0%7C0&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C0%7C1&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C0%7C2&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C1%7C0&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C1%7C1&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C1%7C2&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C0&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C1&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+      <td style="padding: 4px; border: none; background: transparent;">
+        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C2&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+      </td>
+    </tr>
+  </table>
+
+<p align="center">
+  <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7Creset&body=Click+%22Submit+new+issue%22+to+reset+the+board%21"><img src="https://img.shields.io/badge/RESET_GAME-ff00ff?style=for-the-badge&logo=github&logoColor=ffffff" alt="Reset Game" /></a>
+</p>
+<!-- TIC-TAC-TOE-END -->
+
+Senior Software Developer based in India, specializing in enterprise-scale Java backend systems, Spring Boot microservices, distributed messaging architecture, and cloud platforms.
 
 ---
 
-### 🚀 About Me
+### 👾 About Me
 
 - 💻 Currently working as a **Senior Software Developer** at Accenture, designing and optimizing distributed systems.
 - ⚙️ Deep expertise in **Java (17/11)**, **Spring Boot**, **Apache Kafka**, **Redis**, and cloud infrastructure (**AWS & GCP**).
@@ -13,16 +63,16 @@ Senior Software Developer based in India, specializing in enterprise-scale Java 
 
 ---
 
-### 🛠️ Tech Stack & Tools
+### 🛠️ Tech Stack & Systems
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages** | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=sqlite&logoColor=white) |
-| **Frameworks** | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white) ![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) |
-| **Messaging & Cache** | ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) |
-| **Databases** | ![Oracle DB](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
-| **Cloud & DevOps** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white) ![Pivotal Cloud Foundry](https://img.shields.io/badge/PCF-00A0E9?style=flat-square&logo=cloud-foundry&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) |
-| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jirasoftware&logoColor=white) ![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellij-idea&logoColor=white) |
+| **Languages** | ![Java](https://img.shields.io/badge/Java-00FFFF?style=flat-square&logo=openjdk&logoColor=000000) ![Python](https://img.shields.io/badge/Python-ff00ff?style=flat-square&logo=python&logoColor=ffffff) ![JavaScript](https://img.shields.io/badge/JavaScript-00ff66?style=flat-square&logo=javascript&logoColor=000000) ![Kotlin](https://img.shields.io/badge/Kotlin-00FFFF?style=flat-square&logo=kotlin&logoColor=000000) ![SQL](https://img.shields.io/badge/SQL-ff00ff?style=flat-square&logo=sqlite&logoColor=ffffff) |
+| **Frameworks** | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-00ff66?style=flat-square&logo=spring-boot&logoColor=000000) ![Spring MVC](https://img.shields.io/badge/Spring_MVC-00FFFF?style=flat-square&logo=spring&logoColor=000000) ![React](https://img.shields.io/badge/React-ff00ff?style=flat-square&logo=react&logoColor=ffffff) ![Hibernate](https://img.shields.io/badge/Hibernate-00ff66?style=flat-square&logo=hibernate&logoColor=000000) |
+| **Messaging & Cache** | ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-00FFFF?style=flat-square&logo=apache-kafka&logoColor=000000) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-ff00ff?style=flat-square&logo=rabbitmq&logoColor=ffffff) ![Redis](https://img.shields.io/badge/Redis-00ff66?style=flat-square&logo=redis&logoColor=000000) |
+| **Databases** | ![Oracle](https://img.shields.io/badge/Oracle-ff00ff?style=flat-square&logo=oracle&logoColor=ffffff) ![MySQL](https://img.shields.io/badge/MySQL-00FFFF?style=flat-square&logo=mysql&logoColor=000000) ![MongoDB](https://img.shields.io/badge/MongoDB-00ff66?style=flat-square&logo=mongodb&logoColor=000000) |
+| **Cloud & DevOps** | ![AWS](https://img.shields.io/badge/AWS-00FFFF?style=flat-square&logo=amazon-aws&logoColor=000000) ![Google Cloud](https://img.shields.io/badge/GCP-00ff66?style=flat-square&logo=google-cloud&logoColor=000000) ![Pivotal Cloud Foundry](https://img.shields.io/badge/PCF-ff00ff?style=flat-square&logo=cloud-foundry&logoColor=ffffff) ![Docker](https://img.shields.io/badge/Docker-00FFFF?style=flat-square&logo=docker&logoColor=000000) ![Kubernetes](https://img.shields.io/badge/Kubernetes-00ff66?style=flat-square&logo=kubernetes&logoColor=000000) |
+| **Tools** | ![Git](https://img.shields.io/badge/Git-ff00ff?style=flat-square&logo=git&logoColor=ffffff) ![GitLab](https://img.shields.io/badge/GitLab-00FFFF?style=flat-square&logo=gitlab&logoColor=000000) ![Jira](https://img.shields.io/badge/Jira-00ff66?style=flat-square&logo=jirasoftware&logoColor=000000) ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ-ff00ff?style=flat-square&logo=intellij-idea&logoColor=ffffff) |
 
 ---
 
@@ -30,21 +80,21 @@ Senior Software Developer based in India, specializing in enterprise-scale Java 
 
 #### 💬 [ChatApp](https://github.com/hiron1999/ChatApp) — Distributed Real-Time WebSocket Messaging Service
 *A highly scalable, real-time messaging backend powered by **Java, Spring Boot 3.x, WebSockets (STOMP), Apache Kafka**, and **Redis**.*
-* **Horizontal Scaling**: Scales WebSocket servers from 2 to 200+ instances dynamically using Redis for state/room registries.
-* **Low Latency**: Utilizes Reactive Spring and Lettuce for sub-millisecond connection and broadcasting speeds.
-* **Resilient Broker Pipeline**: Configured with a 3-broker Apache Kafka cluster featuring active partition replication (`acks=all`) and idempotency for zero-loss message delivery.
-* **Tech Stack**: Spring Boot 3, Spring WebSockets, Spring Kafka, Spring Data Redis Reactive, Docker
+* 🚀 **Horizontal Scaling**: Scales WebSocket servers from 2 to 200+ instances dynamically using Redis for state/room registries.
+* ⚡ **Low Latency**: Utilizes Reactive Spring and Lettuce for sub-millisecond connection and broadcasting speeds.
+* 🔗 **Resilient Broker Pipeline**: Configured with a 3-broker Apache Kafka cluster featuring active partition replication (`acks=all`) and idempotency for zero-loss message delivery.
+* 🛠️ **Tech Stack**: Spring Boot 3, Spring WebSockets, Spring Kafka, Spring Data Redis Reactive, Docker
 
 #### 🎓 [CourseShare](https://github.com/hiron1999/CourseShareFrontend) — Robust Platform for Self-Paced Learning
 *A comprehensive online learning platform offering secure, high-performance course uploads and video streaming.*
-* **Smooth Streaming**: Leverages HTTP Live Streaming (HLS) for uninterrupted video content delivery.
-* **Async Workflows**: Integrates RabbitMQ for backend task scheduling and messaging notifications.
-* **Tech Stack**: Spring Boot 3, React, AWS, RabbitMQ, Docker, Kubernetes
+* 🚀 **Smooth Streaming**: Leverages HTTP Live Streaming (HLS) for uninterrupted video content delivery.
+* ⚡ **Async Workflows**: Integrates RabbitMQ for backend task scheduling and messaging notifications.
+* 🛠️ **Tech Stack**: Spring Boot 3, React, AWS, RabbitMQ, Docker, Kubernetes
 
 #### 🧠 [QuickLearn AI](https://github.com/hiron1999/Quicklearn/tree/main-) — Privacy-Focused Client-Side Assistant
 *A privacy-first, client-side application that runs locally to summarize content and generate interactive quizzes.*
-* **Local Processing**: Ensures sensitive data never leaves the user's device by running summarization tasks on the client-side.
-* **Tech Stack**: JavaScript, HTML5, Tailwind CSS, Client-side LLM APIs | [Live Demo](https://hiron1999.github.io/Quicklearn/)
+* 🚀 **Local Processing**: Ensures sensitive data never leaves the user's device by running summarization tasks on the client-side.
+* 🛠️ **Tech Stack**: JavaScript, HTML5, Tailwind CSS, Client-side LLM APIs | [Live Demo](https://hiron1999.github.io/Quicklearn/)
 
 ---
 
@@ -61,9 +111,9 @@ Senior Software Developer based in India, specializing in enterprise-scale Java 
 ### 📊 GitHub Statistics & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hiron1999&show_icons=true&theme=tokyonight&count_private=true&hide_title=true" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=hiron1999&show_icons=true&title_color=00ffff&icon_color=ff00ff&text_color=ffffff&bg_color=0a0715&border_color=2c2547&count_private=true&hide_title=true" height="150" alt="GitHub Stats" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hiron1999&layout=compact&theme=tokyonight&hide_title=true" height="150" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hiron1999&layout=compact&title_color=00ffff&icon_color=ff00ff&text_color=ffffff&bg_color=0a0715&border_color=2c2547&hide_title=true" height="150" alt="Top Languages" />
 </p>
 
 ---
