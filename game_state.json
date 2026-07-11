@@ -1,15 +1,15 @@
 {
   "board": [
+    "X",
     " ",
     " ",
     " ",
-    " ",
-    " ",
+    "O",
     " ",
     " ",
     " ",
     " "
   ],
   "winner": null,
-  "status": "\ud83c\udfae Your turn! Click any empty grid cell below to start."
+  "status": "\ud83e\udd16 CPU placed O. Your turn!"
 }
