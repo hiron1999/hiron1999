@@ -23,7 +23,7 @@
     </tr>
     <tr>
       <td style="padding: 4px; border: none; background: transparent;">
-        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C1%7C0&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+        <img src="assets/o.svg" width="70" height="70" alt="O" />
       </td>
       <td style="padding: 4px; border: none; background: transparent;">
         <img src="assets/o.svg" width="70" height="70" alt="O" />
@@ -34,7 +34,7 @@
     </tr>
     <tr>
       <td style="padding: 4px; border: none; background: transparent;">
-        <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C0&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
+        <img src="assets/x.svg" width="70" height="70" alt="X" />
       </td>
       <td style="padding: 4px; border: none; background: transparent;">
         <a href="https://github.com/hiron1999/hiron1999/issues/new?title=ttplay%7C2%7C1&body=Just+click+%22Submit+new+issue%22+to+register+your+move.+The+GitHub+Action+will+update+the+board+in+seconds."><img src="assets/empty.svg" width="70" height="70" alt="Play" /></a>
